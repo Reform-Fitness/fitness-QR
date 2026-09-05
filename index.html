@@ -1,9 +1,208 @@
 <!DOCTYPE html>
-<html lang=“ka”>
+<html lang="ka">
 <head>
-<meta charset=“UTF-8”>
-<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Reforma Fitness</title>
+    <title>Reforma Fitness</title>
 
-<style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ff3b30;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ff3b30;
+        }
+
+        .hero {
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #111, #333);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff3b30;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #e02d24;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #ff3b30;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 34px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Reforma Fitness</h1>
+
+        <nav>
+            <a href="#home">მთავარი</a>
+            <a href="#about">ჩვენ შესახებ</a>
+            <a href="#services">სერვისები</a>
+            <a href="#contact">კონტაქტი</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <h2>გახდი შენი საუკეთესო ვერსია</h2>
+            <p>Reforma Fitness — შენი გზა ჯანმრთელი და ძლიერი ცხოვრებისკენ.</p>
+            <a href="#contact" class="btn">დაგვიკავშირდი</a>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2>ჩვენ შესახებ</h2>
+        <p>
+            Reforma Fitness არის ადგილი, სადაც ვარჯიში,
+            მოტივაცია და ჯანსაღი ცხოვრების წესი ერთიანდება.
+        </p>
+    </section>
+
+    <section class="section" id="services">
+        <h2>ჩვენი სერვისები</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>ფიტნესი</h3>
+                <p>
+                    ივარჯიშე პროფესიონალურ გარემოში
+                    და მიაღწიე შენს მიზნებს.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>პერსონალური ვარჯიში</h3>
+                <p>
+                    მიიღე ინდივიდუალური პროგრამა
+                    და პროფესიონალური დახმარება.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>ჯანსაღი ცხოვრების წესი</h3>
+                <p>
+                    შექმენი სწორი ჩვევები და იზრუნე
+                    საკუთარ ჯანმრთელობაზე.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>კონტაქტი</h2>
+        <p>დაგვიკავშირდი და დაიწყე შენი ცვლილება დღესვე.</p>
+        <br>
+        <a href="mailto:info@reformafitness.com" class="btn">
+            მოგვწერე
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Reforma Fitness. ყველა უფლება დაცულია.</p>
+    </footer>
+
+</body>
+</html>
